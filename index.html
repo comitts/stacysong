@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"\>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\indexstyle.css">
+    <meta name="keywords" content="stacysongs">
+    <title>stacysongs</title><link rel="icon" type="img/png" href="templates\logo.jpg">
+</head>
+    <body style="background-image: url('background.jpg');">
+        <div class="header">
+            <header align="center">StacySongs</header><br/>
+            <div class="dropdown">
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close">&times;</span>
+                    <!-- Modal Content -->
+                    <form id="id01" class="modal-content animate" style="height: 350px; width: 400px; background-image: url('formbg.jpg');" align="center">
+                        <div style="float: right;">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                            class="close" title="Close">
+                                <img src="templates\cancel.jpg" id="exit">
+                            </span>
+                        </div>
+                        <div class="imgcontainer" align="center">
+                            <img src="templates\profile.jpg" alt="profile" class="profile" style="margin: 20px;">
+                        </div>
+                        <label for="pswd" style="color: red; font-weight: bold;">Enter the administration password: </label>
+                        <input type="password" id="pswd" placeholder="Enter the password" required title="recomended" 
+                        style="height: 60px; width: 300px; border: rgb(85, 85, 248);
+                            border-style: ridge;
+                             border-bottom-left-radius: 10px;
+                             border-top-left-radius: 10px;
+                             border-bottom-right-radius: 10px;
+                             border-top-right-radius: 10px;
+                             font-size: 20px;
+                             text-indent: 10px;"><br/>
+                        <input type="button" id="signin" onclick="checkPswd();" value="Enter The Administration" style="border: rgb(32, 177, 221);
+                        border-style: ridge;
+                         border-bottom-left-radius: 10px;
+                         border-top-left-radius: 10px;
+                         border-bottom-right-radius: 10px;
+                         border-top-right-radius: 10px;">
+                    </form>
+                    <script type="text/javascript">
+                        // Get the modal
+                        var modal = document.getElementById('form');  
+                        function checkPswd() {
+                            var confirmPassword = "dmz555";
+                            var password = document.getElementById("pswd").value;
+                            if (password == confirmPassword) {
+                                window.location=("cpanel.html")
+                            }
+                            else{
+                                alert("Wrong Administration Password.");
+                            }
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modalcontent"align="center">
+                    <p1 align="center">STACYSONG<br/>FOR ADMINS ONLY</p1>
+                </div>
+                <div class="modalcontent">
+                    <div class="modal-header">
+                    <h2>WELCOME IN THE ADMINISTRATION</h2>
+                    </div>
+                    <div class="modal-body" align="center">
+                    <p>Add song here</p>
+                    <form method="post">
+                        <label for="name">Artist Name:</label>
+                        <input type="text" placeholder="enter the artist name" style="margin-top: 10px; margin-bottom: 10px; width:200px ; height: 30px;"><br/>
+                        <label for="name">Song Name:</label>
+                        <input type="text" placeholder="enter the song" style="margin-top: 10px; margin-bottom: 10px; width:200px ; height: 30px;"><br/>
+                        <input type="file" id="mySong" name="songname" eccept="video/*" eccept="audios/*" style="margin-bottom: 20px; margin-top: 5px;"><br/>
+                        <label for="songname">upload your song</label>
+                        <input type="submit" id="posts" value="ADD">
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                    <h3>copyright&copy;ericwin2021</h3>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+        
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+        
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+        
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+            </script> 
+        </div>
+        <div>
+            <nav>
+                <input type="text" id="search" placeholder="search songs here..."><input id="search1" type="submit" value="search">
+                <ul id="nav">
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="playlist.html">PLAYLIST</a></li>
+                    <li><a href="trendings.html">TRENDINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'">ADMINS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1 align="center">RECOMENDED FOR YOU</h1>
+            <div class="songs" align="center" id="songspost">
+                <a href="videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4">
+                    <video src="videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4"></video>
+                </a>
+                <p style="text-indent: 20px;">videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4</p>
+                <a href="videos\Diamond Platnumz - Baba Lao @Mullastar.mp4">
+                    <video src="videos\Diamond Platnumz - Baba Lao @Mullastar.mp4"></video>
+                </a>
+                <p style="text-indent: 20px;">videos\Diamond Platnumz - Baba Lao @Mullastar.mp4</p>
+                <a href="videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4">
+                    <video src="videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4"></video>
+                </a>
+                <p style="text-indent: 20px;">videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4</p>
+                <a href="audios\80=One Six - Maya.mp3">
+                    <video src="audios\80=One Six - Maya.mp3"></video>
+                </a>
+                <p style="text-indent: 20px;">audios\80=One Six - Maya.mp3</p>
+                <a href="videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4">
+                    <video src="videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4"></video>
+                </a>
+                <p style="text-indent: 20px;">videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4</p>
+            </div>
+        </div>
+        <div align="center" style="font-size: 20px;">
+            <ins style="font-size: 20px; text-decoration: none;">follow us on our social medias</ins><br/>
+            <p style="font-size: 20px;"></p><a href="#""><img src="templates\instagram.jpg"  style="height: 30px; width: 30px;"></a><br/>
+            <p style="font-size: 20px;">INSTAGRAM:</p><a href="#" style="text-decoration: none; font-size: 20px;">stacysongs</a><br/>
+            <a href="#" style="text-decoration: none;">Request the administration to add your song</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css\cpanelstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="stacysongs">
+  <title>stacysongs</title><link rel="icon" type="img/png" href="templates\logo.jpg">
+</head>
+<body style="background-image: url('background.jpg');">
+  <span class="close" title="Close">
+    <a href="index.html"><img src="templates\cancel.jpg" id="exit"></a>
+  </span>
+  <div id="myModal" class="modal">
+      <div class="modalcontent"align="center">
+          <p1 align="center">STACYSONG<br/>FOR ADMINS ONLY</p1>
+      </div>
+      <div class="modalcontent">
+          <div class="modal-header">
+           <h2>WELCOME IN THE ADMINISTRATION</h2>
+          </div>
+          <div class="modal-body" align="center">
+           <p style="font-size: 20px;">Add song here</p>
+          <form method="post" enctype='multipart/form-data' action="app.js">
+              <label for="name" style="font-size: 30px;">Artist Name:</label>
+              <input type="text" placeholder="enter the artist name" style="margin-top: 10px; margin-bottom: 10px; width:200px ; height: 30px;"><br/>
+              <label for="name" style="font-size: 30px;">Song Name:</label>
+              <input type="text" placeholder="enter the song" style="margin-top: 10px; margin-bottom: 30px; width:200px ; height: 30px;"><br/>
+              <label for="songname" style="font-size: 20px;">upload song file</label><br/>
+              <input type="file" id="mySong" name="upload" eccept="video/*" eccept="audios/*" style="margin-bottom: 6px; margin-top: 5px; visibility: visible; margin-left: 70px;"><br/>
+              <label for="songname" style="font-size: 20px; margin-top: 35px;">upload your song</label><br/>
+              <input type="submit" value="ADD" style="color: black; background-color: cornflowerblue; font-size: 20px; height: 40px; width: 90px; margin-top: 5px;">
+          </form>
+          </div>
+          <div class="modal-footer">
+          <h3>copyright&copy;ericwin2021</h3>
+          </div>
+      </div>
+  </div>
+  <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+      modal.style.display = "block";
+      }
+
+      input.onclick = function() {
+      modal.style.display = "block";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      }
+  </script>
+  <div class="songs">
+    <h1 align="center">SONGS PRESENT</h1>
+        <div align="center" id="songs">
+            <a href="videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4">
+                <video src="videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4"></video>
+            </a>
+            <p style="text-indent: 20px;">videos\Chris_Mwahangila_-_Chunguza_Moyo_Gospel_Song(480p).mp4</p>
+            <a href="videos\Diamond Platnumz - Baba Lao @Mullastar.mp4">
+                <video src="videos\Diamond Platnumz - Baba Lao @Mullastar.mp4"></video>
+            </a>
+            <p style="text-indent: 20px;">videos\Diamond Platnumz - Baba Lao @Mullastar.mp4</p>
+            <a href="videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4">
+                <video src="videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4"></video>
+            </a>
+            <p style="text-indent: 20px;">videos\Masaka_Kids_Africana_Dancing_Joy_Of_Togetherness<br/>_ft_3wash_hip_hop_&_Karina_Palmira(360p).mp4</p>
+            <a href="audios\80=One Six - Maya.mp3">
+                <video src="audios\80=One Six - Maya.mp3"></video>
+            </a>
+            <p style="text-indent: 20px;">audios\80=One Six - Maya.mp3</p>
+            <a href="videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4">
+                <video src="videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4"></video>
+            </a>
+                <p style="text-indent: 20px;">videos\Stamina Ft Atan - ASIWAZE -DJMwanga.com.mp4</p>
+        </div>
+  </div>
+</body>
+</html>
