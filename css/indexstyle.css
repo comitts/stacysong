@@ -9,6 +9,10 @@ body{
     background-size: 500%;
     background-attachment: fixed;
 }
+div {
+    width: 100vw;
+    height: 100vh;
+}
 .header{
     background-color: black;
     height: 150px;
