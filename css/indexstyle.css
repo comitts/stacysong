@@ -123,6 +123,8 @@ h1{
     height: 900px;
     overflow-y: scroll;
     scrollbar-face-color: transparent;
+    Border: black solid;
+    Border top margin: 20px;
 }
 #li{
     font-size: 30px;
