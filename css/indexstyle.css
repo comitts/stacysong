@@ -224,3 +224,9 @@ video{
   ::-webkit-scrollbar-thumb:hover {
   background: #7bac10;
   }
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
