@@ -123,19 +123,6 @@ h1{
     height: 900px;
     overflow-y: scroll;
     scrollbar-face-color: transparent;
-    border: black solid;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-
-}
-video{
-    border: blue solid;
-    height: 200px;
-    width: 600px;
-    padding: 0px;
-    margin: 10px;
 }
 #li{
     font-size: 30px;
