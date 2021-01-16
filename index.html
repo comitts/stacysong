@@ -106,6 +106,12 @@
         <div>
             <nav>
                 <input type="text" id="search" placeholder="search songs here..."><input id="search1" type="submit" value="search">
+                <script type="text/javascript">
+                 document.getElementById('frmSearch').onsubmit = function() {
+                     window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                 return false;
+                 }
+                </script>
                 <ul id="nav">
                     <li><a class="active" href="#">HOME</a></li>
                     <li><a href="playlist.html">PLAYLIST</a></li>
